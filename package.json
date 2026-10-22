@@ -1,0 +1,23 @@
+{
+  "name": "legolas-platform",
+  "private": true,
+  "author": "Kyrylo Khomenko",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "fmt": "biome check . --error-on-warnings",
+    "fmt:write": "biome check . --write --error-on-warnings",
+    "validate": "pnpm -r --parallel validate",
+    "test": "pnpm -r test",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "husky": "catalog:",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@12.15.0"
+}
