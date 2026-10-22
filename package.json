@@ -11,6 +11,7 @@
     "fmt": "biome check . --error-on-warnings",
     "fmt:write": "biome check . --write --error-on-warnings",
     "validate": "pnpm -r --parallel validate",
+    "test": "pnpm -r test",
     "prepare": "husky"
   },
   "devDependencies": {
